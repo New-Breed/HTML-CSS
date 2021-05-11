@@ -1,0 +1,223 @@
+01-05-2017
+*
+{
+	propriété sur toute 
+}
+
+div /* sélectione sur quel balise on veut les propriétés */
+{
+	background-color: #EEE; /* Couleur du back ground */ 
+}
+
+#id ou div#id /* pour les id  */
+{
+	XXX
+}
+
+span.class ou .class ou p span.class /* pour les class  */
+{
+	XXX
+}
+
+p, span, div /* pour plusieur sélecteurs  */
+{
+	XXX
+}
+
+#XXX /* sur les id=XXX */
+
+
+
+:root /* pour les "variable" */
+{
+	--rouge:#da5c5c; /* -- ensuite le nom de la variable etc. */
+	--margedefaut:10px;
+}
+div /* sélectione sur quel balise on veut les propriétés */
+{
+	background-color:var(--rouge); /* Pour aller chercher la variable */ 
+	margin:var(--margedefaut); /* Pour aller chercher la variable */ 
+}
+
+
+
+/* Format de mesure standard 10px, 80%, 0.1em à 1em, small, xx-large */
+/* couleur RBG = red-bleu-green rbg(a)(255,0,112,(1.0)) on peu ajouter (a) pour l'opacité, #FFFFFFou#FFF,  */
+/* Block en dessous des autres et inline de coté - écrire option display block ou inline*/
+/* auto pour la largeur à pansser */
+
+
+XXX /* Couleur et Fond */
+{
+	color: ; /* applique la couleur sur les éléments sélectioner */
+	background-color: ; /* Couleur de fond */
+	background-image:url(image.jpg); ; /* image de fond */
+	background-position:X Y ;/* placer X et Y  en px en %, top, bottom, left, etc. */
+	background-repeat: no-repeat; /* jouer sur le répété repeat-x ou -y, space, round, */
+	background-size: cover, contain;/* jouer avec l ajustement d image et en px, %. */
+	background-origin: ; /* padding-box, border-box, content-box (à vérifier) */
+	background-attachment: ; /* local STD, scroll l'image défile avec le scroll, fixed seulement le contenu qui bouge */
+}
+
+
+XXX /* text */
+{
+	font-style:normal; /* italic,etc. */
+	font-variant:small-caps; /* Lettre en Majuscule mais en minuscule (lol) */
+	font-weight:normal;/*  bold en gras, de 100 à 900 etc. */
+	font-size: 10px; /*  police de 10 pixel, 80%, 0.1em à 1em(par rapport à HTML), small, xx-large */
+	line-height: 10px;/* l entre ligne pixel, etc.  */
+	font-family: Arial;/* choix de police, monospace, cursive, calibri, etc. */
+	text-decoration: underline; /* soulignier,overligne, lignethrough red ou #fff */
+	text-shadow: X x x #ddd; /* 2px horizontal 2px vertical 5px shadow et couleur #fff  */
+	text-transform: ;/*capitalase Majuscule pour chaque mot, uppercase tout majuscule, lowercase tout minuscule  */
+	text-align: ;/* left, right, center, justify */
+	vertical-align: ;/* 25px, sub, top, middle, etc */
+	text-indent: 25px;/* espace du début */
+	text-overflow: ;/* clip changement de ligne sans couper,  */
+	letter-spacing: 5px;/* espace entre les lettre */ word-spacing: 5px;/* espace entre les mots */
+	white-space: ;/* nowrap pas de saut de ligne */
+	direction:initial;/* rtl ou ltr, right to left */
+
+}
+
+XXX /* Styliser les Listes */
+{
+	list-style-image:url(image.jpg); /* applique une image sur les listes a place des petits points */
+	list-style-type: ; /* none, disc, squart, circle, lower-latin(abc),   */
+	list-style-position:; /* outside pour laisser la puce à l'extérieur quand on sélectionne avec la souris, inside (dedans) */
+}
+
+XXX /* Affichage et Positionnement */
+{
+	display: none; /* disparetre le text sans espace(du texte enlever),  */
+	visibility: hidden; /* Disparet le texte mais garde l espacement */
+	visibility: collapse; /* cache élément (d'un tableau) */
+	opacity: 1; /* de 0 à 1 -  */
+	position: relative; /* bouger par rapport au coin en haut a gauche du static */
+	left: 100px; /* mettre a gauche 100 pixel de libre */
+	z-index: 123; /* graduer de 2 a 1000 élément pour mettre 1 par dessus l autre */
+	float: left; /* mettre sur un image pour metre un text collant l image (texte justify) */
+	clear: both; /* enlever le float (left, right etc */
+}
+
+XXX /* Border et Contour */
+{
+	border:10px dashed #ddd; /* bordure avec cette syntaxe */
+	border-width: ; /* px % etc */
+	border-style: ; /* dotted, dashed, solid, double, groove, ridge, inset, outset */
+	border-color:  ; /* #FFFFF */
+	border-radius: ; /* Arrondis ou border-top-left-radius etc. */
+	border-image:URL ; /* border-image.com (prévisualisé) copier coller le lien (souce-slice-widht-outset-repeat) */
+	border-collapse: collapse; /* coller les bordure dans une tableau, separate pour ajuster la marge entre les tableaux */
+	border-spacing: 10px; /* ajuster la marge entre les tableaux */
+	outline:10px dotted #fff ; /* le contour de la bordure (même syntax que border) */
+	outline-offset: 10px ; /* Met une parge entre bordure et contour */
+}
+
+XXX /* Model de box */
+{
+	width: ; /* Largeur px % etc, max-width ou min-w. */
+	height: ; /* hauteur px % etc. max-height, min-h */
+	padding: ; /* marge a l'intérieur du block, top, right, bottom, left,(écrire les 4 desuites) (Ex:10px 10px 10px 10px) */
+	margin: ; /* marge a l'extérieur du block, top, right, bottom, left,(écrire les 4 desuites) (Ex:10px auto 10px auto) */
+	overflow: ; /* dépassement d'un mot du block, auto, hidden(cacher), scroll (-x et -y)*/
+	overflow-wrap: break-word; /* dépassement d'un mot du block, mettre au complet dans le block sans scroll (bon pour une URL) */ 
+	box-shadow: x y 10px couleur; /* met la bordure shadow */
+	box-sizing: border-box; /* laisse les bordures a l'intérieur du block (attention au outline) */
+}
+
+XXX /* Flexbox */
+{
+	display: flex; /* mettre flex sur conteneur et non sur les items du conteneur */
+	flex-direction: ; /* row OU column (-reverse pour les inverser) */
+	flex-wrap: wrap; /* Si plusieur éléments, saut de ligne */
+	justify-content: space-around; /* justifyer le positionnement flex-start flex-end center space-between */
+	flex-grow: 123; /* graduer de 2 a 1000 élément pour prendre plus d espace (item)*/
+}
+
+
+XXX /* Grid */
+{
+	display: grid; /* Grid activer le mode Grid*/
+	grid-template-columns: x x x; /* Créé 3 colonnes x peut prendre auto ou px 1fr 2fr =3fr*/
+	grid-template-rows: x x; /* Créé 2 Lignes */
+	grid-auto-flow: column; /* mettre le reste des éléments en colonne */
+	grid-column: 1; /* ITEM met l item sur la 1 colonne */
+
+	display: grid; /* Grid activer le mode Grid*/
+	grid-template-columns: auto minmax(150px, 300px); /* Créé des colonnes qui peut prendre px 1fr 2fr =3fr*/
+	grid-template-areas:"xxx xxx" /* ou en rajouter xxx de plus pour avoir 3 colonnes sur les 3 lignes */
+						"yyy zzz"
+						"sss sss"
+	header {grid-area: xxx;}
+	section{grid-area: yyy;}
+	aside {grid-area: zzz;}
+	footer {grid-area: sss;}
+}
+
+
+XXX /* Responsive */
+/* Mettre dans entête (head) */<meta name="viewport" content="width:device-width, initial-scale=1">
+
+img 
+{
+	max-width: 100%;/* changer l image de 100% a plus petit quand on rappetisse la fenetre */
+	height: auto;/* Que el reste suive le rapetissement */
+}	
+
+@media screen and (max-width: 500px) /* Dans media il a le- all, screen, speech, print (and, only, not) */
+{
+	body
+	{
+		background-color: #FFF; /* Changer couleur de fond pour le format 500px ETC. */
+	}
+
+	html
+	{
+		display: grid; /* Grid activer le mode Grid*/
+		grid-template-columns: 1fr; /* Créé une colonne seulement */
+		grid-template-areas:"xxx" /* ou en rajouter xxx de plus pour avoir 3 colonnes sur les 3 lignes */
+							"yyy"
+							"zzz"
+							"sss"
+		header {grid-area: xxx;}
+		section{grid-area: yyy;}
+		aside {grid-area: zzz;}
+		footer {grid-area: sss;}
+	}
+}
+@media screen and (max-width: 900px) /* Dans media il a le- all, screen, speech, print (and, only, not) */
+{
+	body
+	{
+		background-color: #DDD; /* Changer couleur de fond pour le format 900px ETC. */
+	}
+}
+
+
+
+
+/* À voir --------------*/
+img:hover
+{
+	opacity: 0.5; /* quand on pass ela souris dessus elle s'ajuste à 50% d'opacité */
+}
+
+--------------------------------------------------------------------------------------------------------
+Site avec 
+img:hover
+{
+	opacity: 0.5; /* quand on pass ela souris dessus elle s'ajuste à 50% d'opacité */
+}
+
+box-shadow: x y 10px couleur; /* met la bordure shadow */
+
+background-attachment: scroll; /* l'image défile avec le scroll */
+
+
+display: flex; /* mettre flex sur conteneur et non sur les items du conteneur */
+justify-content: space-around; /* justifyer le positionnement flex-start flex-end center space-between */
+
+
+@media

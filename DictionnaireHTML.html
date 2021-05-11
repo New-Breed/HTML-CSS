@@ -1,0 +1,162 @@
+
+
+01/05/2016
+
+<!DOCTYPE html><!-- Pour compatibité pour toute les Navigateurs -->
+<html lang="fr"> <!-- Langage francais -->
+<html> <!-- Départ de la page Web -->
+<head> <!-- Départ de l'entête -->
+	<meta charset="utf-8"><!-- Unicode de la ASCII pour les Caractères -->
+	<link rel="stylesheet" type="text/css" href="style.css"><!-- lien pour linker la page CSS (style.css dans le meme dossier)-->
+	<title>Benoit Beauchemin Page</title> <!-- Titre de la page -->
+</head> <!-- Fermeture de l'entête-->
+
+<body> <!-- Départ du centre du site-->
+<nav><!-- Départ de nav, lien vers d autre page ou d une section de page -->
+	<ul> <!-- Départ du conteneur de la liste (ol pour chiffre)-->
+		<li>Section#1</li> <!-- 1er objet de la liste -->
+		<li>Section#2</li> <!-- 2 eme objet de la liste -->
+		<li>Section#3</li> <!-- 3 eme objet de la liste -->
+	</ul> <!-- Fermeture du conteneur de la liste-->
+</nav><!-- Fermeture de nav, lien vers d autre page ou d une section de page -->
+
+<div><!-- Départ de la section bloc peu s'employer avec class et id -->
+	<h1>Titre </h1><!-- Titre de la section (seulement 1X dans la page) -->
+	<p>Je fait un texte.</p><!-- Paragraphe de la section-->
+</div><!-- Fermeture de la section bloc-->
+<footer><!-- Départ du pied de page-->
+	<p>CopyRight &copy; New-Breed</p>
+</footer><!-- Fermeture du pied de page-->
+
+</body><!-- Fermeture du centre du site-->
+</html><!-- Fermeture de la page Web -->
+
+<!-- TEXTE -->
+
+<br> <!-- Saut à la ligne -->
+<wbr> <!-- Saut à la ligne sans couper le mot -->
+
+<hr> <!-- Ligne de séparation -->
+
+<strong></strong> <!-- Mettre en évidence un texte dans le paragraphe -->
+
+<ins></ins> <!-- Texte soulignier dans le paragraphe -->
+
+<del></del> <!-- Texte BARRÉ dans le paragraphe -->
+
+<em></em> <!-- Mettre l emphase sur ce texte -->
+
+<mark></mark><!-- Texte Marqueur dans le paragraphe -->
+
+<cite></cite> <!-- cité un nom dans un paragraphe -->
+
+<pre> allo		allo</pre> <!-- Afficher le texte avec espace du html-->
+
+<aside></aside> <!-- Former une boite à part pour information indirecte -->
+
+<dl><!-- Afficher styl Dictionaire -->
+	<dt>Benoit</dt>
+	<dd>Benoit défini un nom ...</dd>
+	<dt>Marie-josée</dt>
+	<dd>Défini un nom ...</dd>
+</dl>
+
+<article></article><!-- afficher un article d'une section incluant un ou plusieur paragraphe (semblabe au div) -->
+
+<section></section><!-- Afficher plusieur sujet et article ou div dans une même section -->
+
+<style type="text/css"></style> <!-- inclure des info de styl au format CSS -->
+
+<span></span><!-- Sélection de section (inline) peu s'employer avec class et id-->
+	<span class="Sélection"> XXX </span>
+	<span id="Une sélection"> XXX </span>
+
+<frameset></frameset> <!-- Remplace le (body) pour structuré les Cadres (frame) -->
+
+<q cite="www.citation.com"><!-- Lien qui menn vers la siation X choisis -->
+	<blockquote></blockquote><!-- La siation X choisis -->
+
+<details> <summary>Mot à regarder</summary> </details><!-- Mot à clicker pour afficher un texte -->
+
+<abbr title="Info si la souris es dessus">  Allo </abbr> <!-- Mettre en évidance le Allo, pour laisser la souris dessus -->
+
+<a href="www.google.ca" target="_blank"> Cliquer ici pour ouvrir Google </a> <!-- Afficher un site Web - Blank pour une newpage -->
+	<title>Site de Google</title> <!-- Affiche un info si on laisse la souris dessus le lien -->
+
+<address> 
+	1245 Rte ... 
+	J0G1B0
+	<a href="mailto:bbeauchemin89@hotmail.com"> Mon mail </a>
+</address> <!-- Afficher l addresse et le mail -->
+
+<progress value="10" max="100"><!-- Afficher une progression de ça -->
+<meter value="0.25">25%</meter><!-- Afficher une progression de ça en valeur num (min max low hight)-->
+
+Air<sup>2</sup> <!-- Afficher le ti 2 -->
+
+<time datetime="1984-07-31">31 Juillet 1984</time> <!-- Afficher une date -->
+
+<script type="text/javascript"></script> <!-- insclure du code -->
+
+<noscript> XXX </noscript> <!-- Affiche si le code n'Est pas interprété par le navigateur -->
+
+<!-- Multimédia -->
+
+<img src="pic.jpg" alt="Affichage d'une image"> <!-- Afficher une image (alt affiche si l image affiche pas)-->
+<figcaption> Source: <a href="www.pic.com"></a></figcaption> <!-- Afficher un site pour l image -->
+
+<audio>
+	<source src="son.mp3" type="Audio" controls> <!-- Afficher un son (controls - autoplay muted loop prelaod) -->
+</audio>
+
+<video>
+	<source src="Vidéo.mp4" type="Vidéo"><!-- Afficher un vidéo (controls - autoplay muted loop prelaod) -->
+</video>
+
+
+<!-- Formulaire-->
+
+<form><!-- Balise pour ouvrir les Formulaires-->
+<form method="get-post" action="resultat.php" name="formulaire" autocomplete="on">
+	<!-- prendre post pour les grosse donner, get pour les petits tranferes (ajout les donner a l'URL)
+		-action pour envoyer vers un fichier php
+		-auto pour terminer le formulaire automatique -->
+	<label for="Prénom"> Nom:</label><input type="text" name="xxx" placeholder="VOTRE NOM">
+	<!-- label pour pouvoir se servir de tab
+		-id à mettre pour relier entres elle les input 
+		-type text (std) Voir les autres types
+		-placholder pour afficher dans la case a écrire -->
+	<input type="checkbox" name="XXX"> <!-- case à cocher -->
+	<input type="radio" name="YYY"> Oui <input type="radio" name="YYY"> Non <!-- choix de point entre 2 avec le meme name (lien) -->
+	<input type="password" name="XXX"><!-- cache la saisi-->
+	<input type="date" name="XXX"><!-- pour les dates affiche calendrier-->
+	<input type="email et tel" name="XXX"><!-- pour ceux qui sont en phone-->
+	<input type="search" name="XXX"><!-- saisi pour recherche -->
+	<input type="number" name="XXX" min="0" max="100" maxlength="10"><!-- saisi d'un nombre et maximum de 10 didgit-->
+
+	<input type="submit" value="Se Connecter"><!-- Bouton à envoyer au serveur-->
+	<input type="reset" value="EFFACER"><!-- Effacer dans zone d'écriture-->
+	
+	<button type="button">Cliquer ici</button><!-- Bouton Se connecter opt formaction= Formetode=post -->
+
+	<textarea name="Texte" rows="3" cols="50"> </textarea><!-- Afficher une section pour écrire du text 3 en bas et 50 coté -->
+
+<fieldset><!-- encadrement de la section (peu utiliser disable pour désactivé la section)-->
+	<legend>Section</legend> <!-- Titre qui affiche de la section -->
+	<label for="Prénom"> Nom:</label><input type="text" name="xxx" placeholder="VOTRE NOM"><br>
+	<input type="submit" value="Envoyer"><!-- Bouton Se connecter-->
+</fieldset><!-- Fermé l'encadrement de la section -->
+	
+	<select name="Choix"><!-- Faire un choix de sélection Aussi choisir <datalist> pour rajouter par le client-->
+		<!-- On peu rajouter l'optgroup -->
+		<option value="1">Choix #1</option><!-- ce qui est dans Value va etre envoyer au php ET mettre l'option disable -->
+		<option value="2">Choix #2</option>
+	</select> 
+
+</form><!-- Fermé le Formulaire -->
+
+
+
+
+
+<dialog> <!-- Avec Javascript ??? -->
